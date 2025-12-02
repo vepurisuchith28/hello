@@ -2,8 +2,10 @@
 // Supabase Config
 // ----------------------
 const SUPABASE_URL = "https://nffjvjulrnqxwnibyfhe.supabase.co";
-const SUPABASE_ANON_KEY = "YOUR_ANON_KEY"; // replace with your anon key
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5mZmp2anVscm5xeHduaWJ5ZmhlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ1NDUxODQsImV4cCI6MjA4MDEyMTE4NH0.6pdy1oKFKIL8VU60B-nrR50f5hA1NN8WUQ4z9FIbLRE";
+
 const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
 
 // ----------------------
 // SIGNUP FUNCTION
