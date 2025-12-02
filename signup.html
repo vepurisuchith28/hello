@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <img src="assets/logo.png" class="logo" alt="Logo">
+        <h2>Create Account</h2>
+        <form onsubmit="signupUser(event)">
+            <input id="signup-firstname" type="text" placeholder="First Name" required>
+            <input id="signup-lastname" type="text" placeholder="Last Name" required>
+            <input id="signup-email" type="email" placeholder="Email" required>
+            <input id="signup-password" type="password" placeholder="Password" required>
+            <select id="signup-gender" required>
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input id="signup-dob" type="date" placeholder="Date of Birth" required>
+            <input id="signup-mobile" type="text" placeholder="Mobile Number" required>
+            <button>Signup</button>
+        </form>
+        <a href="index.html">Already have an account? Login</a>
+    </div>
+</body>
+</html>
